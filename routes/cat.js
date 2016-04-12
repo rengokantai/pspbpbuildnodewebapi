@@ -2,7 +2,7 @@
  * Created by Hernan Y.Ke on 2016/4/12.
  */
 var _ = require('lodash');
-var Cat = require('./cat_model.js');
+var Cat = require('../models/cat.js');
 
 module.exports = function(app) {
     //In browser
@@ -57,9 +57,9 @@ module.exports = function(app) {
     app.get('/cat', function (req, res) {
         Cat.find(function(err,cats){
         if(err){
-            res.json({mes: 'error'});
+            res.json({mes: 'error',data:cats});
         }
-        res.json({mes: 'success'});
+        res.json({mes: 'success',data:cats});
     })
     })
     app.get('/cat/:id', function (req, res) {
