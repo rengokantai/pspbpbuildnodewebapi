@@ -28,3 +28,7 @@ edit
 ```
 nf start
 ```
+#####add async
+```
+nodemon pet_server.js
+```

@@ -21,7 +21,9 @@ module.exports = function(app) {
             if(err){
                 res.json({mes: 'error'});
             }
-            res.json({mes: 'success',data:dogs});
+            setTimeout(function() {
+                res.json({mes: 'success', data: dogs});
+            },5000);
         })
     })
     app.get('/dog/:id', function (req, res) {

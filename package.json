@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/rengokantai/pspbpbuildnodewebapi#readme",
   "dependencies": {
+    "async": "^2.0.0-rc.3",
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "lodash": "^4.10.0",
