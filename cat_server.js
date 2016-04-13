@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-mongoose.connect(process.env.CAT);
+mongoose.connect("mongodb://root:root@ds023500.mlab.com:23500/cat");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended:true

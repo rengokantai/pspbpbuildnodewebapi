@@ -32,3 +32,16 @@ nf start
 ```
 nodemon pet_server.js
 ```
+
+######need to use env process
+change mongo link to env link, because nf cannot coexist with forever
+```
+mongoose.connect(process.env.DOG);
+```
+in .env file
+```
+{
+"cat":"mongodb://user:pass@",
+"dog":"mongodb://user:pass@
+}
+```
